@@ -62,6 +62,7 @@ def create_new_dialogues(row_text, num_new_dialogues=3):
     """
     从单行原始对话文本中创建新的多轮对话
     返回一个列表，包含num_new_dialogues个新的完整对话
+    20250611
     """
     # 提取原始User提问
     original_text=row_text["representative"]
