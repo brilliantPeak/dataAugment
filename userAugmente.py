@@ -52,6 +52,7 @@ def build_request(prompt):
 def extract_user_questions_from_single_line(text):
     """
     从单行文本中提取所有User提问（通过"User:"和"Assistant:"标签分隔）
+
     """
     # 使用正则表达式匹配所有"User:"后的内容，直到遇到"Assistant:"
     pattern = r'User: (.*?)(?=Assistant:|$)'
@@ -62,6 +63,7 @@ def create_new_dialogues(row_text, num_new_dialogues=3):
     """
     从单行原始对话文本中创建新的多轮对话
     返回一个列表，包含num_new_dialogues个新的完整对话
+    20250611
     """
     # 提取原始User提问
     original_text=row_text["representative"]
