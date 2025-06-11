@@ -52,6 +52,7 @@ def build_request(prompt):
 def extract_user_questions_from_single_line(text):
     """
     从单行文本中提取所有User提问（通过"User:"和"Assistant:"标签分隔）
+
     """
     # 使用正则表达式匹配所有"User:"后的内容，直到遇到"Assistant:"
     pattern = r'User: (.*?)(?=Assistant:|$)'
